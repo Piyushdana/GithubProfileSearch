@@ -1,0 +1,203 @@
+.user-container {
+    display: flex;
+    align-items: center;
+}
+ 
+.user-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.user-details {
+    margin-left: 20px;
+}
+
+.user-name {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.user-bio {
+     
+}
+
+.user-location {
+    margin-top:-12px;
+}
+
+.user-profile-link a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;  
+    margin-bottom: 2rem;  
+    
+}
+
+.repositories-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repositories-container > div {
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+ 
+.user-profile-link a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;  
+    margin-top: -10px;  
+}
+
+.repositories-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.repositories-container > div {
+    width: 48%;
+    margin: 1%;
+    padding: 10px;
+    border: 2px solid #0d6efd7a;
+    border-radius: 5px;
+}
+
+.language{
+    padding: 5px 27px;
+    border: none;
+    border-radius: 6px;
+    min-width: 5rem;
+    margin-top: 1.8rem;
+    display: inline-block;
+    
+
+}
+
+.head{
+    align-items: baseline;
+    display: flex;
+    
+     
+}
+
+.des{
+    align-items: baseline;
+    display: flex;
+    margin-top: 6px;
+}
+.container{
+    min-height:10rem;    
+    z-index: 100;
+    position: relative;
+}
+ 
+.btns{
+    /* background-color: #007bff; */
+    /* color: white;     */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 1rem;
+}
+
+#particles-js{
+     
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
+ 
+ 
+@media (300px <= width <= 424px){
+    .user-container {
+        display: flex;
+        align-items: center;    
+        flex-direction: column;
+    }
+
+    .repositories-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .repositories-container > div {
+        width: 100%;
+        margin: 1%;
+        padding: 10px;
+        border: 1px solid #0d6efd7a;
+        border-radius: 5px;
+    }
+
+    #particles-js{
+     
+        display: none;
+        
+    }
+     
+}
+
+@media (425px <= width <= 768px){
+    .user-container {
+        display: flex;
+        align-items: center;    
+        flex-direction: column;
+    }
+
+
+    .repositories-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .repositories-container > div {
+        width: 100%;
+        margin: 1%;
+        padding: 10px;
+        border: 1px solid #0d6efd7a;
+        border-radius: 5px;
+    }
+    #particles-js{
+     
+        display: none;
+        
+    }
+}
+
+
+/* 
+@media (769px <= width <= 1024px){
+    .user-container {
+        display: flex;
+        align-items: center;    
+        flex-direction: column;
+    }
+
+    .repositories-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .repositories-container > div {
+        width: 100%;
+        margin: 1%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+} */

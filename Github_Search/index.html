@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- This are the particles (Small balls animated in BG) -->
+    <div id="particles-js"></div>
+    <!--  -->
+
+    <!-- All the content are under container  -->
+    <div class="container">
+        <br><br>
+        <h1 class="text-center">Github Search User</h1>
+        <form id="myForm" autocomplete="off">
+            <div class="form-group text-center">
+                <input type="text" class="form-control" id="search" placeholder="Search Username">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-danger btn-block mt-2" id="searchBtn">
+                    Search User
+                </button>
+            </div>
+        </form>
+
+        <div id="result" class="user-container">
+            <div id="userImg" class="user-img"></div>
+            <div class="user-details">
+                <div id="userName" class="user-name"></div>
+                <div id="userBio" class="user-bio"></div>
+                <div id="userLocation" class="user-location"></div>
+                <div id="userProfileLink" class="user-profile-link"></div>
+            </div>
+        </div>
+
+        <div id="repositories" class="repositories-container ">
+            <!-- Repository are displayed here -->
+        </div>
+
+        <div id="pagination" class="  text-center mt-2 mb-2">
+            <!-- Pagination controls -->
+        </div>
+    </div>
+
+    <!-- ////////////// -->
+    
+    <!-- Js Files for Particles -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+     <!--/////////////// -->
+
+     <!-- Main js file -->
+    <script src="script.js"></script>
+</body>
+</html>
